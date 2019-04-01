@@ -1,8 +1,15 @@
+// Libs
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+
+// Utils
 import * as serviceWorker from './serviceWorker';
+
+// Resources
+import './static/scss/index.scss';
+
+// Components
+import App from './components/App/App';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

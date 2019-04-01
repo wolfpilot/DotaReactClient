@@ -1,17 +1,10 @@
 {
   "name": "dota-react-client",
+  "description": "Dota client built with Create React App and Typescript.",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@types/jest": "24.0.11",
-    "@types/node": "11.12.2",
-    "@types/react": "16.8.10",
-    "@types/react-dom": "16.8.3",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8",
-    "typescript": "3.4.1"
-  },
+  "author": "Razvan Negrea <howl@wolfpilot.co> (www.wolfpilot.co)",
+  "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -26,7 +19,9 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx}": ["tslint -c tslint.json"]
+    "*.{ts,tsx}": [
+      "tslint -c tslint.json"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,5 +40,16 @@
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
     "tslint-react": "^4.0.0"
+  },
+  "dependencies": {
+    "@types/jest": "24.0.11",
+    "@types/node": "11.12.2",
+    "@types/react": "16.8.10",
+    "@types/react-dom": "16.8.3",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "2.1.8",
+    "typescript": "3.4.1"
   }
 }
