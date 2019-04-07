@@ -3,6 +3,7 @@
 
 /** Common **/
 @import './common/base';
+@import './layout/container';
 
-/** Components **/
-@import '../../components/App/app';
+/** Modules **/
+@import '../../components/Page/page';
