@@ -5,17 +5,20 @@
   "private": true,
   "author": "Razvan Negrea <howl@wolfpilot.co> (www.wolfpilot.co)",
   "license": "MIT",
+  "homepage": "https://wolfpilot.github.io/DotaReactClient",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint:ts": "tslint -c tslint.json 'src/**/*.{ts,tsx}'"
+    "lint:ts": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "lint-staged && yarn test"
+      "pre-push": "lint-staged"
     }
   },
   "lint-staged": {
@@ -48,6 +51,7 @@
     "@types/react": "16.8.10",
     "@types/react-dom": "16.8.3",
     "@types/react-router-dom": "^4.3.1",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
