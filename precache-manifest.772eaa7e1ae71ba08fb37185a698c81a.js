@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/DotaReactClient/static/js/runtime~main.8e5a3ab8.js"
   },
   {
-    "revision": "9790ebf7c88ed12204e2",
-    "url": "/DotaReactClient/static/js/main.86dd1c6a.chunk.js"
+    "revision": "c6545ba4a4808345583c",
+    "url": "/DotaReactClient/static/js/main.e613636b.chunk.js"
   },
   {
     "revision": "d9ae0c4545e56d4fc2ab",
     "url": "/DotaReactClient/static/js/2.d36c43b7.chunk.js"
   },
   {
-    "revision": "9790ebf7c88ed12204e2",
+    "revision": "c6545ba4a4808345583c",
     "url": "/DotaReactClient/static/css/main.95c44bfa.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/DotaReactClient/static/css/2.10535824.chunk.css"
   },
   {
-    "revision": "c53cc40b5af8f4c03580540b44faccd0",
+    "revision": "46907379e732a26a90eafe8aa1b15234",
     "url": "/DotaReactClient/index.html"
   }
 ];
