@@ -8,11 +8,11 @@ export const getHeroes = async () => {
 
     // Filter out unwanted properties
     return data.map((hero: any) => {
-      const { id, localized_name, attack_type, primary_attr, roles } = hero;
+      const { name, localized_name, attack_type, primary_attr, roles } = hero;
 
       // Re-map properties to desired names
       return {
-        id,
+        id: name.replace('npc_dota_hero_', ''),
         name: localized_name,
         attackType: attack_type,
         primaryAttribute: primary_attr,
@@ -22,4 +22,8 @@ export const getHeroes = async () => {
   } catch (e) {
     return new Error(`Error while fetching: ${e}`);
   }
+};
+
+export const getHeroThumbSource = (id: string) => {
+  return `${API_ENDPOINTS.images}/${id}_sb.png`;
 };

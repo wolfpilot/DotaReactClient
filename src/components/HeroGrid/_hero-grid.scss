@@ -1,0 +1,17 @@
+.hero-grid {
+  &:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 80px);
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  &__item {
+    line-height: 0;
+  }
+}

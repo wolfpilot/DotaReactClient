@@ -5,7 +5,8 @@ import React, { PureComponent } from 'react';
 import { IHeroes } from '../../static/js/models/models';
 
 // Components
-import HeroGrid from '../../components/HeroGrid/HeroGrid';
+import PageHeader from '../../components/PageHeader/PageHeader';
+import HeroBrowser from '../../components/HeroBrowser/HeroBrowser';
 
 // Utils
 import { getHeroes } from '../../static/js/services/api/api';
@@ -32,7 +33,15 @@ class HomePage extends PureComponent<{}, IState> {
   }
 
   public render() {
-    return <HeroGrid heroes={this.state.heroes} />;
+    return (
+      <>
+        <PageHeader title="Heroes" />
+
+        <main role="main">
+          <HeroBrowser heroes={this.state.heroes} />
+        </main>
+      </>
+    );
   }
 }
 
