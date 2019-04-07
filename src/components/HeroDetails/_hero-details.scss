@@ -1,0 +1,58 @@
+$c-strength: #f7412d;
+$c-agility: #2ed600;
+$c-intelligence: #00a7f7;
+
+.hero-details {
+  &__header {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__portrait {
+    margin-right: 20px;
+  }
+
+  &__stats {
+    border: 1px solid $c-accent;
+    border-radius: 5px;
+  }
+
+  &__stats-row {
+    display: flex;
+    padding: 20px 10px;
+
+    &:nth-child(odd) {
+      background: transparentize($c-dark, 0.9);
+    }
+
+    &:nth-child(even) {
+      background: transparentize($c-light, 0.9);
+    }
+  }
+
+  &__attribute-name,
+  &__attributes {
+    flex: 33%;
+    text-align: center;
+  }
+
+  &__attribute-name {
+    margin-bottom: 0;
+  }
+
+  &__attributes {
+    margin: 0;
+
+    &--strength {
+      color: $c-strength;
+    }
+
+    &--agility {
+      color: $c-agility;
+    }
+
+    &--intelligence {
+      color: $c-intelligence;
+    }
+  }
+}

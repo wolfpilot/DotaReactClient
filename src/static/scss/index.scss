@@ -1,5 +1,20 @@
-/** Common **/
-@import './common/base';
+/** Lib **/
+@import '../../../node_modules/normalize.css/normalize.css';
 
-/** Components **/
-@import '../../components/App/app';
+/** Common **/
+@import './common/variables';
+@import './common/base';
+@import './common/typography';
+@import './common/link';
+@import './common/list';
+@import './layout/container';
+
+/** Modules **/
+// Page
+@import '../../components/Page/page';
+@import '../../components/PageFooter/page-footer';
+
+// Hero
+@import '../../components/HeroGrid/hero-grid';
+@import '../../components/Hero/hero';
+@import '../../components/HeroDetails/hero-details';
