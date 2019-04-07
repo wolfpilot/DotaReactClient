@@ -8,7 +8,7 @@ import HeroPage from './pages/HeroPage/HeroPage';
 
 export const routes = (
   <Switch>
-    <Route exact={true} path="/" component={HomePage} />
-    <Route exact={true} path="/hero/:id" component={HeroPage} />
+    <Route exact={true} path={`${process.env.PUBLIC_URL}/`} component={HomePage} />
+    <Route exact={true} path={`${process.env.PUBLIC_URL}/hero/:id`} component={HeroPage} />
   </Switch>
 );
