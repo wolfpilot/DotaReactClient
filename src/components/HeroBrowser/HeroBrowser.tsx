@@ -14,7 +14,7 @@ interface IProps {
   heroes: IHero[];
 }
 
-const renderError = () => <p>Sorry, no heroes are available at this time.</p>;
+const renderError = () => <p>Loading...</p>;
 
 const renderHeroes = (heroes: IHero[]) =>
   HERO_TYPES.map(type => {

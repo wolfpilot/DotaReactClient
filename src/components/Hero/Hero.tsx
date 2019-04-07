@@ -1,5 +1,6 @@
 // Libs
 import React, { PureComponent } from 'react';
+import { Link } from 'react-router-dom';
 
 // Models
 import { IHero } from '../../static/js/models/models';
@@ -18,6 +19,7 @@ class Hero extends PureComponent<IProps, {}> {
         {id && this.renderThumbnail()}
 
         <div className="hero__details">
+          <Link to={`/hero/${id}`} title="Go to hero details" className="hero__link" />
           {name && <h1 className="hero__name">{name}</h1>}
           {attackType && <h4 className="hero__attack-type">Attack Type: {attackType}</h4>}
         </div>
@@ -25,7 +27,13 @@ class Hero extends PureComponent<IProps, {}> {
     );
   }
   private renderThumbnail() {
-    return <img src={getHeroThumbSource(this.props.id)} className="hero__thumb-img" role="img" />;
+    return (
+      <img
+        src={getHeroThumbSource(this.props.gameAssetName)}
+        className="hero__thumb-img"
+        role="img"
+      />
+    );
   }
 }
 

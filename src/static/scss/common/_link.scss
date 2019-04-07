@@ -1,0 +1,11 @@
+.link {
+  &--btn {
+    padding: 10px 20px;
+    color: $c-light;
+    font-size: 18px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
