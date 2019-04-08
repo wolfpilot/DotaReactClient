@@ -19,7 +19,11 @@ class Hero extends PureComponent<IProps, {}> {
         {id && this.renderThumbnail()}
 
         <div className="hero__details">
-          <Link to={`/hero/${id}`} title="Go to hero details" className="hero__link" />
+          <Link
+            to={`${process.env.PUBLIC_URL}/hero/${id}`}
+            title="Go to hero details"
+            className="hero__link"
+          />
           {name && <h1 className="hero__name">{name}</h1>}
           {attackType && <h4 className="hero__attack-type">Attack Type: {attackType}</h4>}
         </div>

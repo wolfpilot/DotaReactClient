@@ -24,7 +24,7 @@ const initialState: any = {
 };
 
 const getFooterLink = () => (
-  <Link to="/" className="link link--btn">
+  <Link to={`${process.env.PUBLIC_URL}/`} className="link link--btn">
     All heroes
   </Link>
 );
