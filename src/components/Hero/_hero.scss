@@ -1,19 +1,22 @@
 .hero {
   position: relative;
 
-  &__details {
+  &__tooltip {
     position: absolute;
-    z-index: 10;
+    z-index: -1;
     top: 50%;
     left: 50%;
-    display: none;
-    padding: 20px;
-    background: $c-gradient-dark;
-    line-height: initial;
-    transform: translate(-50%, -50%);
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.1);
+    transition:
+      z-index $transition-timing-default $transition-easing-default,
+      opacity $transition-timing-default $transition-easing-default,
+      transform $transition-timing-default $transition-easing-default;
 
     .hero:hover & {
-      display: block;
+      z-index: 10;
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
     }
   }
 
@@ -21,13 +24,5 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-  }
-
-  &__link {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
   }
 }
