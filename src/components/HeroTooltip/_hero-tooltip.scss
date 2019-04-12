@@ -1,0 +1,48 @@
+$tooltipWidth: 200px;
+$tooltipHeight: 250px;
+
+.hero-tooltip {
+  position: relative;
+  width: $tooltipWidth;
+  height: $tooltipHeight;
+  background: $c-gradient-dark;
+  background-size: cover;
+  background-repeat: no-repeat;
+  line-height: initial;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:
+      linear-gradient(
+        to bottom,
+        transparent 60%,
+        transparentize($c-dark, 0.2)
+      );
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__name {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    margin-bottom: 0;
+    hyphens: auto;
+    color: $c-light;
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
