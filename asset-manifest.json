@@ -1,15 +1,15 @@
 {
-  "main.css": "/DotaReactClient/static/css/main.95c44bfa.chunk.css",
-  "main.js": "/DotaReactClient/static/js/main.fb7350fa.chunk.js",
-  "main.js.map": "/DotaReactClient/static/js/main.fb7350fa.chunk.js.map",
+  "main.css": "/DotaReactClient/static/css/main.bdd5fe43.chunk.css",
+  "main.js": "/DotaReactClient/static/js/main.dc9c06c3.chunk.js",
+  "main.js.map": "/DotaReactClient/static/js/main.dc9c06c3.chunk.js.map",
   "runtime~main.js": "/DotaReactClient/static/js/runtime~main.8e5a3ab8.js",
   "runtime~main.js.map": "/DotaReactClient/static/js/runtime~main.8e5a3ab8.js.map",
-  "static/css/2.10535824.chunk.css": "/DotaReactClient/static/css/2.10535824.chunk.css",
-  "static/js/2.d36c43b7.chunk.js": "/DotaReactClient/static/js/2.d36c43b7.chunk.js",
-  "static/js/2.d36c43b7.chunk.js.map": "/DotaReactClient/static/js/2.d36c43b7.chunk.js.map",
+  "static/css/2.68e1701b.chunk.css": "/DotaReactClient/static/css/2.68e1701b.chunk.css",
+  "static/js/2.d444bfdb.chunk.js": "/DotaReactClient/static/js/2.d444bfdb.chunk.js",
+  "static/js/2.d444bfdb.chunk.js.map": "/DotaReactClient/static/js/2.d444bfdb.chunk.js.map",
   "index.html": "/DotaReactClient/index.html",
-  "precache-manifest.12a71f36ab30d9753572ff6ded549533.js": "/DotaReactClient/precache-manifest.12a71f36ab30d9753572ff6ded549533.js",
+  "precache-manifest.bc5d79914b38375f9566a3de19ce085e.js": "/DotaReactClient/precache-manifest.bc5d79914b38375f9566a3de19ce085e.js",
   "service-worker.js": "/DotaReactClient/service-worker.js",
-  "static/css/2.10535824.chunk.css.map": "/DotaReactClient/static/css/2.10535824.chunk.css.map",
-  "static/css/main.95c44bfa.chunk.css.map": "/DotaReactClient/static/css/main.95c44bfa.chunk.css.map"
+  "static/css/2.68e1701b.chunk.css.map": "/DotaReactClient/static/css/2.68e1701b.chunk.css.map",
+  "static/css/main.bdd5fe43.chunk.css.map": "/DotaReactClient/static/css/main.bdd5fe43.chunk.css.map"
 }
