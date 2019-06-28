@@ -6,7 +6,7 @@ interface IProps {
 }
 
 const PageHeader = ({ title }: IProps) => (
-  <div className="page-header">{title && <h1 className="page-header__title">{title}</h1>}</div>
+  <header className="page-header">{title && <h1 className="page-header__title">{title}</h1>}</header>
 );
 
 export default PageHeader;

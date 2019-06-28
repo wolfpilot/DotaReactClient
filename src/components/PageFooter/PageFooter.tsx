@@ -1,6 +1,6 @@
 // Lib
 import React from 'react';
 
-const PageFooter = (props?: any) => <div className="page-footer">{props.children}</div>;
+const PageFooter:React.FC = props => <footer className="page-footer">{props.children}</footer>;
 
 export default PageFooter;
